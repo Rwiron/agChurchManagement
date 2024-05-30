@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\web\webController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,17 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('home', function () {
-    return view('Home.index');
-});
+
+// page routes for HomeController
+Route::get('/', [webController::class, 'index'])->name('home.index');
+Route::get('/sermons', [webController::class, 'sermons'])->name('home.sermons');
+Route::get('/news', [webController::class, 'news'])->name('home.news');
+Route::get('/events', [webController::class, 'events'])->name('home.events');
+Route::get('/about', [webController::class, 'about'])->name('home.about');
+Route::get('/contact', [webController::class, 'contact'])->name('home.contact');
 
 
+// Route::get('login', function () {
+//     return view('auth.login');
+// });
 
-Route::get('login', function () {
-    return view('auth.login');
-});
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
