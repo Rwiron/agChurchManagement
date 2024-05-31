@@ -86,7 +86,8 @@
                                 <li><a href="{{ route('home.events') }}">Events</a></li>
                                 <li><a href="{{ route('home.about') }}">About</a></li>
                                 <li><a href="{{ route('home.contact') }}">Contact</a></li>
-                                <li><a href="#" class="donate">Donate</a></li>
+                                <li><a href="{{ route('login') }}" class="donate">Sign In</a></li>
+
                             </ul>
                         </div>
                     </div>

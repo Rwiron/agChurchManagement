@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPAG Kanombe</title>
      <!-- Favicon -->
-    <link href="{{ asset('Frontend/images/logo.png') }}" rel="icon" />
+    <link href="{{ asset('frontend/img/favicon.ico') }}" rel="icon" />
 
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -93,7 +93,8 @@
                                 <li><a href="{{ route('home.events') }}">Events</a></li>
                                 <li><a href="{{ route('home.about') }}">About</a></li>
                                 <li><a href="{{ route('home.contact') }}">Contact</a></li>
-                                <li><a href="#" class="donate">Donate</a></li>
+                                <li><a href="{{ route('login') }}" class="donate">Sign In</a></li>
+
                             </ul>
                         </div>
                     </div>
